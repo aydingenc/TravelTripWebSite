@@ -1,0 +1,23 @@
+﻿@using TatilSeyahat_.Models.Siniflar
+@model List<Hakkimizda>
+
+@{
+    ViewBag.Title = "About";
+    Layout = "~/Views/Shared/_testLayout.cshtml";
+}
+
+<div class="content">
+    <div class="wrap">
+        <div class="about">
+            <h3>Hakkımızda </h3>
+            @foreach (var x in Model)
+            {
+            <img src="@x.FotoURL" alt=""/>
+            <p>@x.Aciklama</p>
+            }
+        </div>
+    </div>
+</div>
+
+
+
